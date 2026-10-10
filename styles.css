@@ -278,9 +278,9 @@ body {
   font-weight: 800;
   font-size: 1.05rem;
   letter-spacing: 0.5px;
-  background: var(--gold-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
 }
 
 .nav-actions {
@@ -401,7 +401,7 @@ body {
 
 .nfc-card-container {
   width: 100%;
-  height: 245px;
+  height: 260px;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -420,7 +420,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: var(--radius-lg);
-  padding: 22px 24px;
+  padding: 18px 20px;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   display: flex;
@@ -430,9 +430,9 @@ body {
   box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.6), 0 0 0 1.5px rgba(212, 175, 55, 0.45);
 }
 
-/* Front Face: Exact 3D Logo Wall Royal Navy & Gold Sheen */
+/* Front Face: High Contrast Matte Obsidian Navy Wall */
 .card-front {
-  background: linear-gradient(135deg, #07101f 0%, #0d2242 45%, #050b14 100%);
+  background: radial-gradient(ellipse at 50% 30%, #142034 0%, #09101b 60%, #04070c 100%);
   border: 1.5px solid #d4af37;
 }
 
@@ -446,9 +446,9 @@ body {
   background: linear-gradient(
     115deg,
     transparent 20%,
-    rgba(212, 175, 55, 0.15) 40%,
-    rgba(255, 255, 255, 0.35) 45%,
-    rgba(212, 175, 55, 0.15) 50%,
+    rgba(212, 175, 55, 0.08) 40%,
+    rgba(255, 255, 255, 0.18) 45%,
+    rgba(212, 175, 55, 0.08) 50%,
     transparent 70%
   );
   transform: rotate(-25deg);
@@ -532,43 +532,106 @@ body {
   text-transform: uppercase;
 }
 
+/* Center Brand Plate with High Contrast Backing */
 .card-center-brand {
   position: relative;
   z-index: 2;
   margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  background: rgba(2, 6, 14, 0.65);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 12px;
+  padding: 10px 14px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  width: 100%;
 }
 
 .card-brand-title {
   font-family: var(--font-heading);
   font-size: 1.85rem;
   font-weight: 900;
-  letter-spacing: 1px;
-  background: linear-gradient(135deg, #ffffff 0%, #fde047 35%, #d4af37 70%, #ca8a04 100%);
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* AB Combined Group (Zero gap between A and B) */
+.brand-ab-group {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0px !important;
+  letter-spacing: 0 !important;
+}
+
+/* Luminous Royal Sapphire Blue for "A" and "ASSOCIATE" */
+.brand-letter-a,
+.brand-word-associate {
+  background: linear-gradient(135deg, #ffffff 0%, #93c5fd 20%, #3b82f6 55%, #1d4ed8 85%, #172554 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  line-height: 1.15;
-  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 12px rgba(59, 130, 246, 0.7));
 }
 
-.card-brand-tagline {
-  font-size: 0.85rem;
-  color: #fef08a !important;
-  font-style: italic;
-  letter-spacing: 0.4px;
-  margin-top: 3px;
-  font-weight: 600;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
+.brand-letter-a {
+  font-weight: 900;
 }
 
+/* Radiant 3D Polished Gold for "B" and "&" */
+.brand-letter-b,
+.brand-amp {
+  background: linear-gradient(135deg, #ffffff 0%, #fef08a 25%, #facc15 50%, #eab308 75%, #ca8a04 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 12px rgba(250, 204, 21, 0.7));
+}
+
+.brand-letter-b {
+  font-weight: 900;
+}
+
+.brand-amp {
+  font-size: 0.9em;
+  font-weight: 800;
+}
+
+.brand-word-associate {
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+/* Radiant Gold Firm Pillars Line */
 .card-pillars-line {
   font-family: var(--font-heading);
-  font-size: 0.72rem;
+  font-size: 0.74rem;
   font-weight: 800;
-  color: #93c5fd !important;
+  background: linear-gradient(135deg, #ffffff 0%, #fef08a 25%, #fde047 55%, #eab308 80%, #ca8a04 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fde047; /* fallback */
   letter-spacing: 1.6px;
   text-transform: uppercase;
-  margin-top: 6px;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+  margin-top: 3px;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.95));
+}
+
+/* Warm Radiant Gold Tagline */
+.card-brand-tagline {
+  font-family: 'Playfair Display', 'Georgia', serif, var(--font-main);
+  font-size: 0.88rem;
+  color: #fef08a !important;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+  font-weight: 600;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95), 0 0 10px rgba(254, 240, 138, 0.45);
 }
 
 .card-footer-row {
@@ -675,9 +738,13 @@ body {
 
 .card-back-brand {
   font-family: var(--font-heading);
-  font-weight: 800;
-  font-size: 1.1rem;
-  color: #fde047;
+  font-weight: 900;
+  font-size: 1.08rem;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 4px;
 }
 
 .card-back-detail-item {
@@ -1711,9 +1778,9 @@ body {
   font-size: 1.3rem;
   font-weight: 900;
   letter-spacing: 0.5px;
-  background: var(--gold-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
 }
 
 .footer-tagline-text {
