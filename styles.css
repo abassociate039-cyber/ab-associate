@@ -1,55 +1,63 @@
 /* ==========================================================================
    AB & ASSOCIATE - ULTRA-LUXURY DIGITAL NFC BUSINESS CARD & PORTAL
-   Design System, Glassmorphism, 3D Effects, Dark/Light Themes & Fluid Layout
+   Design System: Signature Royal Cobalt Blue & Brushed Gold (Exact Logo Match)
+   Glassmorphism, 3D Tilt/Flip, High-Contrast Typography & Responsive Layout
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+Gujarati:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap');
 
 :root {
-  /* Dark Theme Palette (Default Royal Midnight Navy & Brushed Gold) */
-  --bg-primary: #050b14;
-  --bg-secondary: #091322;
-  --bg-card: rgba(14, 25, 45, 0.78);
-  --bg-card-hover: rgba(20, 36, 65, 0.9);
-  --bg-card-solid: #0d1a2d;
-  --bg-elevated: #132238;
-  --bg-input: rgba(10, 20, 36, 0.7);
-  --bg-overlay: rgba(3, 7, 13, 0.85);
+  /* ========================================================================
+     DARK THEME (Default Executive Midnight Cobalt & 3D Gold - Exact Logo Wall)
+     ======================================================================== */
+  --bg-primary: #060e1b;
+  --bg-secondary: #0a172c;
+  --bg-card: rgba(11, 24, 46, 0.88);
+  --bg-card-hover: rgba(16, 34, 64, 0.95);
+  --bg-card-solid: #0d1e38;
+  --bg-elevated: #11274a;
+  --bg-input: rgba(8, 18, 36, 0.8);
+  --bg-overlay: rgba(4, 9, 18, 0.88);
 
-  /* Gold & Accent Tokens */
-  --gold-primary: #e5b85a;
-  --gold-light: #fbe3a1;
-  --gold-dark: #b88628;
-  --gold-gradient: linear-gradient(135deg, #fce5a3 0%, #e5b85a 45%, #b88628 100%);
-  --gold-gradient-soft: linear-gradient(135deg, rgba(251, 227, 161, 0.15) 0%, rgba(229, 184, 90, 0.08) 100%);
-  --gold-border: rgba(229, 184, 90, 0.35);
-  --gold-border-glow: rgba(229, 184, 90, 0.65);
-  --gold-shadow: 0 10px 30px -5px rgba(229, 184, 90, 0.22);
+  /* Signature Royal Cobalt Sapphire Blue (From "A" and "& ASSOCIATE") */
+  --blue-primary: #1e40af;
+  --blue-vibrant: #2563eb;
+  --blue-light: #60a5fa;
+  --blue-dark: #172554;
+  --blue-gradient: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%);
+  --blue-gradient-soft: linear-gradient(135deg, rgba(37, 99, 235, 0.2) 0%, rgba(30, 64, 175, 0.08) 100%);
+  --blue-border: rgba(37, 99, 235, 0.4);
+  --blue-glow: 0 0 25px rgba(37, 99, 235, 0.35);
 
-  /* Blue & Obsidian Tokens */
-  --blue-brand: #1d4ed8;
-  --blue-light: #3b82f6;
-  --blue-glow: rgba(59, 130, 246, 0.35);
-  --blue-gradient: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
+  /* Signature 3D Brushed Metallic Gold (From "B" and Arch) */
+  --gold-primary: #d4af37;
+  --gold-light: #fde047;
+  --gold-dark: #a16207;
+  --gold-gradient: linear-gradient(135deg, #fffbeb 0%, #fde047 35%, #d4af37 70%, #a16207 100%);
+  --gold-gradient-soft: linear-gradient(135deg, rgba(253, 224, 71, 0.15) 0%, rgba(212, 175, 55, 0.08) 100%);
+  --gold-border: rgba(212, 175, 55, 0.4);
+  --gold-border-glow: rgba(212, 175, 55, 0.75);
+  --gold-shadow: 0 10px 30px -5px rgba(212, 175, 55, 0.3);
 
   /* Typography Colors */
-  --text-primary: #f8fafc;
+  --text-primary: #ffffff;
   --text-secondary: #cbd5e1;
   --text-muted: #94a3b8;
-  --text-gold: #f6d285;
+  --text-gold: #fde047;
+  --text-blue: #93c5fd;
 
   /* Borders & Glass */
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --glass-border-light: rgba(255, 255, 255, 0.16);
+  --glass-border: rgba(212, 175, 55, 0.2);
+  --glass-border-light: rgba(255, 255, 255, 0.14);
   --glass-blur: blur(20px);
-  --box-shadow-card: 0 16px 40px -8px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(229, 184, 90, 0.18);
-  --box-shadow-glow: 0 0 35px rgba(229, 184, 90, 0.18);
+  --box-shadow-card: 0 16px 40px -8px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(212, 175, 55, 0.22);
+  --box-shadow-glow: 0 0 35px rgba(37, 99, 235, 0.25);
 
   /* Functional Status */
   --success: #10b981;
-  --success-bg: rgba(16, 185, 129, 0.12);
-  --badge-bg: rgba(229, 184, 90, 0.12);
-  --badge-text: #fbe3a1;
+  --success-bg: rgba(16, 185, 129, 0.15);
+  --badge-bg: rgba(212, 175, 55, 0.15);
+  --badge-text: #fde047;
 
   /* Fonts */
   --font-main: 'Plus Jakarta Sans', 'Noto Sans Gujarati', 'Noto Sans Devanagari', -apple-system, sans-serif;
@@ -65,44 +73,50 @@
   --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Light Theme Variables (Crisp High-Contrast Executive Style) */
+/* ==========================================================================
+   LIGHT THEME (Crisp Ice Platinum & Royal Cobalt Navy with Gold Accents)
+   ========================================================================== */
 [data-theme="light"] {
-  --bg-primary: #f4f6fb;
-  --bg-secondary: #e9eef7;
+  --bg-primary: #f0f4f9;
+  --bg-secondary: #e2e9f3;
   --bg-card: #ffffff;
   --bg-card-hover: #ffffff;
   --bg-card-solid: #ffffff;
-  --bg-elevated: #f8fafc;
+  --bg-elevated: #f3f7fd;
   --bg-input: #ffffff;
-  --bg-overlay: rgba(15, 23, 42, 0.7);
+  --bg-overlay: rgba(6, 14, 27, 0.75);
+
+  --blue-primary: #1e40af;
+  --blue-vibrant: #2563eb;
+  --blue-light: #1d4ed8;
+  --blue-dark: #0f172a;
+  --blue-gradient: linear-gradient(135deg, #1e3a8a 0%, #1e40af 60%, #2563eb 100%);
+  --blue-gradient-soft: linear-gradient(135deg, rgba(30, 64, 175, 0.1) 0%, rgba(37, 99, 235, 0.04) 100%);
+  --blue-border: rgba(30, 64, 175, 0.3);
 
   --gold-primary: #b45309;
-  --gold-light: #92400e;
+  --gold-light: #d97706;
   --gold-dark: #78350f;
-  --gold-gradient: linear-gradient(135deg, #d97706 0%, #b45309 60%, #92400e 100%);
+  --gold-gradient: linear-gradient(135deg, #f59e0b 0%, #d97706 50%, #b45309 100%);
   --gold-gradient-soft: linear-gradient(135deg, rgba(217, 119, 6, 0.12) 0%, rgba(180, 83, 9, 0.05) 100%);
-  --gold-border: rgba(180, 83, 9, 0.35);
+  --gold-border: rgba(180, 83, 9, 0.3);
   --gold-border-glow: rgba(180, 83, 9, 0.6);
   --gold-shadow: 0 8px 25px -4px rgba(180, 83, 9, 0.25);
 
-  --blue-brand: #1e40af;
-  --blue-light: #2563eb;
-  --blue-glow: rgba(37, 99, 235, 0.2);
-  --blue-gradient: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
-
-  /* High-Contrast Crisp Typography */
-  --text-primary: #090e17;
+  /* High-Contrast Crisp Slate-Black Typography */
+  --text-primary: #061124;
   --text-secondary: #1e293b;
   --text-muted: #475569;
-  --text-gold: #92400e;
+  --text-gold: #b45309;
+  --text-blue: #1e40af;
 
-  --glass-border: rgba(15, 23, 42, 0.12);
-  --glass-border-light: rgba(15, 23, 42, 0.18);
-  --box-shadow-card: 0 10px 30px -4px rgba(15, 23, 42, 0.08), 0 0 0 1px rgba(180, 83, 9, 0.18);
-  --box-shadow-glow: 0 0 25px rgba(180, 83, 9, 0.12);
+  --glass-border: rgba(30, 64, 175, 0.12);
+  --glass-border-light: rgba(15, 23, 42, 0.14);
+  --box-shadow-card: 0 10px 30px -4px rgba(15, 23, 42, 0.08), 0 0 0 1px rgba(30, 64, 175, 0.12);
+  --box-shadow-glow: 0 0 25px rgba(37, 99, 235, 0.12);
 
-  --badge-bg: rgba(180, 83, 9, 0.1);
-  --badge-text: #78350f;
+  --badge-bg: rgba(30, 64, 175, 0.08);
+  --badge-text: #1e40af;
 }
 
 /* ==========================================================================
@@ -134,7 +148,7 @@ body {
   padding: 0;
 }
 
-/* Ambient Background Luxury Glow */
+/* Ambient Background Luxury Glow (Cobalt Blue & Gold Orbs) */
 .bg-ambient {
   position: fixed;
   top: 0;
@@ -150,14 +164,14 @@ body {
   position: absolute;
   border-radius: 50%;
   filter: blur(90px);
-  opacity: 0.25;
+  opacity: 0.3;
   animation: floatOrb 18s ease-in-out infinite alternate;
 }
 
 .ambient-orb-1 {
-  width: 380px;
-  height: 380px;
-  background: radial-gradient(circle, #e5b85a 0%, #b88628 70%);
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #2563eb 0%, #1e40af 60%, #060e1b 100%);
   top: -80px;
   left: -80px;
 }
@@ -165,24 +179,25 @@ body {
 .ambient-orb-2 {
   width: 420px;
   height: 420px;
-  background: radial-gradient(circle, #2563eb 0%, #1e3a8a 70%);
+  background: radial-gradient(circle, #d4af37 0%, #a16207 70%, transparent 100%);
   bottom: 10%;
   right: -100px;
+  opacity: 0.22;
   animation-delay: -6s;
 }
 
 .ambient-orb-3 {
-  width: 280px;
-  height: 280px;
-  background: radial-gradient(circle, #d4af37 0%, #1e40af 80%);
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, #1d4ed8 0%, #0a172c 80%);
   top: 45%;
   left: 30%;
-  opacity: 0.15;
+  opacity: 0.2;
   animation-delay: -12s;
 }
 
 [data-theme="light"] .ambient-orb {
-  opacity: 0.15;
+  opacity: 0.12;
 }
 
 @keyframes floatOrb {
@@ -198,14 +213,14 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: radial-gradient(rgba(229, 184, 90, 0.08) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(37, 99, 235, 0.1) 1px, transparent 1px);
   background-size: 32px 32px;
   pointer-events: none;
   z-index: 0;
 }
 
 [data-theme="light"] .bg-grid-overlay {
-  background-image: radial-gradient(rgba(180, 83, 9, 0.06) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(30, 64, 175, 0.06) 1px, transparent 1px);
 }
 
 /* Main Container: Mobile-First App Wrapper */
@@ -235,7 +250,7 @@ body {
   -webkit-backdrop-filter: var(--glass-blur);
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-full);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   position: sticky;
   top: 10px;
   z-index: 100;
@@ -250,18 +265,18 @@ body {
 }
 
 .nav-brand-logo {
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   object-fit: cover;
-  border: 1.5px solid var(--gold-primary);
-  box-shadow: 0 0 10px rgba(229, 184, 90, 0.4);
+  border: 2px solid var(--gold-primary);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
 }
 
 .nav-brand-text {
   font-family: var(--font-heading);
   font-weight: 800;
-  font-size: 1.02rem;
+  font-size: 1.05rem;
   letter-spacing: 0.5px;
   background: var(--gold-gradient);
   -webkit-background-clip: text;
@@ -281,7 +296,7 @@ body {
 
 .lang-btn {
   background: var(--bg-elevated);
-  border: 1px solid var(--gold-border);
+  border: 1px solid var(--blue-border);
   color: var(--text-primary);
   padding: 6px 12px;
   border-radius: var(--radius-full);
@@ -297,7 +312,7 @@ body {
 
 .lang-btn:hover {
   border-color: var(--gold-primary);
-  box-shadow: 0 0 12px rgba(229, 184, 90, 0.3);
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.3);
 }
 
 .lang-dropdown {
@@ -307,7 +322,7 @@ body {
   background: var(--bg-card-solid);
   border: 1px solid var(--gold-border);
   border-radius: var(--radius-md);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
   padding: 6px;
   display: flex;
   flex-direction: column;
@@ -373,11 +388,11 @@ body {
 .theme-toggle-btn:hover {
   border-color: var(--gold-primary);
   transform: rotate(20deg);
-  box-shadow: 0 0 14px rgba(229, 184, 90, 0.35);
+  box-shadow: 0 0 14px rgba(212, 175, 55, 0.35);
 }
 
 /* ==========================================================================
-   HERO: 3D VIRTUAL NFC CARD (ALWAYS LUXURY METALLIC VIP STYLE)
+   HERO: 3D VIRTUAL NFC CARD (COBALT & METALLIC GOLD 3D LOGO STYLE)
    ========================================================================== */
 .nfc-card-section {
   perspective: 1200px;
@@ -412,12 +427,12 @@ body {
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
-  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(229, 184, 90, 0.35);
+  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.6), 0 0 0 1.5px rgba(212, 175, 55, 0.45);
 }
 
-/* Front Face: Ultra-Luxury Metallic Obsidian & Cobalt */
+/* Front Face: Exact 3D Logo Wall Royal Navy & Gold Sheen */
 .card-front {
-  background: linear-gradient(135deg, #070f1e 0%, #0e203c 45%, #050b14 100%);
+  background: linear-gradient(135deg, #07101f 0%, #0d2242 45%, #050b14 100%);
   border: 1.5px solid #d4af37;
 }
 
@@ -431,9 +446,9 @@ body {
   background: linear-gradient(
     115deg,
     transparent 20%,
-    rgba(229, 184, 90, 0.15) 40%,
+    rgba(212, 175, 55, 0.15) 40%,
     rgba(255, 255, 255, 0.35) 45%,
-    rgba(229, 184, 90, 0.15) 50%,
+    rgba(212, 175, 55, 0.15) 50%,
     transparent 70%
   );
   transform: rotate(-25deg);
@@ -464,11 +479,11 @@ body {
 .emv-chip {
   width: 44px;
   height: 32px;
-  background: linear-gradient(135deg, #fce5a3 0%, #d4af37 50%, #996515 100%);
+  background: linear-gradient(135deg, #fffbeb 0%, #d4af37 50%, #854d0e 100%);
   border-radius: 6px;
-  border: 1px solid #ffe89e;
+  border: 1px solid #fef08a;
   position: relative;
-  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.6), 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.6), 0 2px 5px rgba(0, 0, 0, 0.4);
   overflow: hidden;
 }
 
@@ -493,7 +508,7 @@ body {
 }
 
 .nfc-wave-icon {
-  color: #fbe3a1;
+  color: #fde047;
   font-size: 1.3rem;
   opacity: 0.95;
   animation: pulseNfc 2.5s infinite ease-in-out;
@@ -501,13 +516,13 @@ body {
 
 @keyframes pulseNfc {
   0%, 100% { transform: scale(1); opacity: 0.75; }
-  50% { transform: scale(1.1); opacity: 1; filter: drop-shadow(0 0 6px rgba(229, 184, 90, 0.8)); }
+  50% { transform: scale(1.1); opacity: 1; filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.8)); }
 }
 
 .card-badge-vip {
-  background: rgba(229, 184, 90, 0.2);
-  border: 1px solid rgba(229, 184, 90, 0.6);
-  color: #fde68a;
+  background: rgba(212, 175, 55, 0.2);
+  border: 1px solid rgba(212, 175, 55, 0.65);
+  color: #fde047;
   font-family: var(--font-heading);
   font-size: 0.68rem;
   font-weight: 800;
@@ -528,11 +543,11 @@ body {
   font-size: 1.85rem;
   font-weight: 900;
   letter-spacing: 1px;
-  background: linear-gradient(135deg, #fffbeb 0%, #fde047 40%, #eab308 70%, #ca8a04 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #fde047 35%, #d4af37 70%, #ca8a04 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1.15;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.6));
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.7));
 }
 
 .card-brand-tagline {
@@ -541,8 +556,8 @@ body {
   font-style: italic;
   letter-spacing: 0.4px;
   margin-top: 3px;
-  font-weight: 500;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
 }
 
 .card-pillars-line {
@@ -553,7 +568,7 @@ body {
   letter-spacing: 1.6px;
   text-transform: uppercase;
   margin-top: 6px;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .card-footer-row {
@@ -590,17 +605,17 @@ body {
   align-items: center;
   gap: 5px;
   font-size: 0.7rem;
-  color: #fde68a;
-  background: rgba(0, 0, 0, 0.5);
+  color: #fde047;
+  background: rgba(0, 0, 0, 0.55);
   padding: 4px 10px;
   border-radius: var(--radius-full);
-  border: 1px solid rgba(229, 184, 90, 0.4);
-  font-weight: 600;
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  font-weight: 700;
 }
 
 /* Back Face Styling */
 .card-back {
-  background: linear-gradient(135deg, #060e1b 0%, #0b192e 50%, #03070e 100%);
+  background: linear-gradient(135deg, #060e1b 0%, #0b1a32 50%, #03070e 100%);
   border: 1.5px solid #d4af37;
   transform: rotateY(180deg);
   text-align: center;
@@ -623,8 +638,8 @@ body {
   right: -24px;
   height: 38px;
   background: #020617;
-  border-top: 1px solid rgba(229, 184, 90, 0.3);
-  border-bottom: 1px solid rgba(229, 184, 90, 0.3);
+  border-top: 1px solid rgba(212, 175, 55, 0.3);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
 }
 
 .card-back-body {
@@ -662,7 +677,7 @@ body {
   font-family: var(--font-heading);
   font-weight: 800;
   font-size: 1.1rem;
-  color: #fde68a;
+  color: #fde047;
 }
 
 .card-back-detail-item {
@@ -716,7 +731,7 @@ body {
 .action-circle-btn:hover {
   transform: translateY(-2px);
   border-color: var(--gold-primary);
-  box-shadow: 0 8px 25px rgba(229, 184, 90, 0.2);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.25);
 }
 
 .action-icon-circle {
@@ -731,25 +746,30 @@ body {
 }
 
 .action-call .action-icon-circle {
-  background: rgba(59, 130, 246, 0.15);
-  color: #3b82f6;
-  border: 1px solid rgba(59, 130, 246, 0.35);
+  background: rgba(30, 64, 175, 0.2);
+  color: #60a5fa;
+  border: 1px solid rgba(37, 99, 235, 0.4);
+}
+
+[data-theme="light"] .action-call .action-icon-circle {
+  background: rgba(30, 64, 175, 0.12);
+  color: #1e40af;
 }
 
 .action-whatsapp .action-icon-circle {
-  background: rgba(37, 211, 102, 0.15);
+  background: rgba(37, 211, 102, 0.18);
   color: #25d366;
-  border: 1px solid rgba(37, 211, 102, 0.35);
+  border: 1px solid rgba(37, 211, 102, 0.4);
 }
 
 .action-email .action-icon-circle {
-  background: rgba(239, 68, 68, 0.15);
+  background: rgba(239, 68, 68, 0.18);
   color: #ef4444;
-  border: 1px solid rgba(239, 68, 68, 0.35);
+  border: 1px solid rgba(239, 68, 68, 0.4);
 }
 
 .action-map .action-icon-circle {
-  background: rgba(229, 184, 90, 0.15);
+  background: rgba(212, 175, 55, 0.18);
   color: var(--gold-primary);
   border: 1px solid var(--gold-border);
 }
@@ -764,20 +784,20 @@ body {
 .save-contact-btn {
   width: 100%;
   background: var(--gold-gradient);
-  color: #0b172a;
-  border: none;
+  color: #061124;
+  border: 1px solid #fef08a;
   border-radius: var(--radius-md);
   padding: 14px 20px;
   font-family: var(--font-heading);
   font-size: 1.05rem;
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: 0.5px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
   cursor: pointer;
-  box-shadow: 0 8px 25px rgba(229, 184, 90, 0.35);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.35);
   transition: var(--transition);
   position: relative;
   overflow: hidden;
@@ -785,13 +805,14 @@ body {
 
 [data-theme="light"] .save-contact-btn {
   color: #ffffff;
-  background: linear-gradient(135deg, #d97706 0%, #b45309 60%, #92400e 100%);
-  box-shadow: 0 8px 25px rgba(180, 83, 9, 0.35);
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%);
+  border: 1.5px solid #d4af37;
+  box-shadow: 0 8px 25px rgba(30, 64, 175, 0.35);
 }
 
 .save-contact-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 35px rgba(229, 184, 90, 0.5);
+  box-shadow: 0 12px 35px rgba(212, 175, 55, 0.5);
 }
 
 /* Secondary CTA Buttons Row */
@@ -803,7 +824,7 @@ body {
 
 .sec-cta-btn {
   background: var(--bg-card);
-  border: 1px solid var(--glass-border-light);
+  border: 1px solid var(--blue-border);
   backdrop-filter: var(--glass-blur);
   border-radius: var(--radius-md);
   padding: 12px 14px;
@@ -845,7 +866,7 @@ body {
 
 .pillar-chip {
   background: var(--bg-card);
-  border: 1px solid var(--gold-border);
+  border: 1px solid var(--blue-border);
   padding: 8px 14px;
   border-radius: var(--radius-full);
   display: flex;
@@ -906,22 +927,31 @@ body {
 }
 
 /* ==========================================================================
-   OFFICE PROFILE & GOOGLE REPUTATION CARD
+   EXECUTIVE BANNER & OFFICE PROFILE CARD (NO IMAGE CUTOFF - FULL VIEW)
    ========================================================================== */
 .office-profile-card {
   background: var(--bg-card);
-  border: 1px solid var(--glass-border);
+  border: 1.5px solid var(--glass-border);
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--box-shadow-card);
   backdrop-filter: var(--glass-blur);
 }
 
+.office-banner-wrap {
+  width: 100%;
+  position: relative;
+  background: #060e1b;
+  overflow: hidden;
+  border-bottom: 1.5px solid var(--glass-border);
+}
+
 .office-banner-img {
   width: 100%;
-  height: 135px;
-  object-fit: cover;
+  height: auto;
+  aspect-ratio: auto;
   display: block;
+  object-fit: contain;
 }
 
 .office-card-body {
@@ -958,7 +988,7 @@ body {
 }
 
 [data-theme="dark"] .google-rating-pill {
-  color: #fbbf24;
+  color: #fde047;
 }
 
 .office-location-text {
@@ -979,7 +1009,7 @@ body {
 
 .office-link-btn {
   background: var(--bg-elevated);
-  border: 1px solid var(--glass-border);
+  border: 1px solid var(--blue-border);
   padding: 11px;
   border-radius: var(--radius-sm);
   color: var(--text-primary);
@@ -999,16 +1029,16 @@ body {
 }
 
 .office-link-btn.btn-google {
-  color: #2563eb;
-  border-color: rgba(37, 99, 235, 0.3);
+  color: #60a5fa;
+  border-color: rgba(37, 99, 235, 0.4);
 }
 
-[data-theme="dark"] .office-link-btn.btn-google {
-  color: #60a5fa;
+[data-theme="light"] .office-link-btn.btn-google {
+  color: #1e40af;
 }
 
 /* ==========================================================================
-   SERVICES SECTION (7 CATEGORIES WITH SEARCH & FILTER)
+   SERVICES SECTION (7 SPECIALISED CATEGORIES WITH SEARCH & FILTER)
    ========================================================================== */
 .section-header-wrap {
   display: flex;
@@ -1048,7 +1078,7 @@ body {
 .service-search-input {
   width: 100%;
   background: var(--bg-card);
-  border: 1px solid var(--glass-border-light);
+  border: 1px solid var(--blue-border);
   border-radius: var(--radius-full);
   padding: 12px 18px 12px 42px;
   color: var(--text-primary);
@@ -1061,7 +1091,7 @@ body {
 
 .service-search-input:focus {
   border-color: var(--gold-primary);
-  box-shadow: 0 0 20px rgba(229, 184, 90, 0.25);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
 }
 
 .service-search-icon {
@@ -1088,7 +1118,7 @@ body {
 
 .filter-chip {
   background: var(--bg-card);
-  border: 1px solid var(--glass-border);
+  border: 1px solid var(--blue-border);
   color: var(--text-secondary);
   font-size: 0.78rem;
   font-weight: 700;
@@ -1101,15 +1131,16 @@ body {
 
 .filter-chip:hover, .filter-chip.active {
   background: var(--gold-gradient);
-  color: #0b172a;
+  color: #061124;
   font-weight: 800;
   border-color: transparent;
-  box-shadow: 0 4px 15px rgba(229, 184, 90, 0.3);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.35);
 }
 
 [data-theme="light"] .filter-chip.active {
   color: #ffffff;
-  background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+  box-shadow: 0 4px 15px rgba(30, 64, 175, 0.35);
 }
 
 /* Services Grid / Accordion */
@@ -1130,7 +1161,7 @@ body {
 
 .service-card:hover {
   border-color: var(--gold-border-glow);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15), 0 0 15px rgba(229, 184, 90, 0.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15), 0 0 15px rgba(212, 175, 55, 0.15);
 }
 
 .service-card-header {
@@ -1154,7 +1185,7 @@ body {
   height: 32px;
   border-radius: 50%;
   background: var(--gold-gradient-soft);
-  border: 1px solid var(--gold-border);
+  border: 1.5px solid var(--gold-border);
   color: var(--gold-primary);
   font-family: var(--font-heading);
   font-weight: 800;
@@ -1169,14 +1200,19 @@ body {
   width: 38px;
   height: 38px;
   border-radius: var(--radius-sm);
-  background: rgba(30, 64, 175, 0.15);
-  border: 1px solid rgba(59, 130, 246, 0.3);
-  color: #3b82f6;
+  background: rgba(30, 64, 175, 0.2);
+  border: 1px solid rgba(37, 99, 235, 0.4);
+  color: #60a5fa;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.1rem;
   flex-shrink: 0;
+}
+
+[data-theme="light"] .service-card-icon {
+  color: #1e40af;
+  background: rgba(30, 64, 175, 0.1);
 }
 
 .service-title-text {
@@ -1214,7 +1250,7 @@ body {
 }
 
 [data-theme="dark"] .service-card-body {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.25);
 }
 
 .service-card.open .service-card-body {
@@ -1297,7 +1333,7 @@ body {
 
 .service-book-btn:hover {
   background: var(--gold-primary);
-  color: #ffffff;
+  color: #061124;
 }
 
 /* ==========================================================================
@@ -1373,7 +1409,7 @@ body {
 }
 
 .deadline-date-pill {
-  background: rgba(229, 184, 90, 0.15);
+  background: rgba(212, 175, 55, 0.18);
   border: 1px solid var(--gold-border);
   color: var(--gold-primary);
   font-size: 0.75rem;
@@ -1430,7 +1466,7 @@ body {
 .calc-select {
   width: 100%;
   background: var(--bg-elevated);
-  border: 1px solid var(--glass-border-light);
+  border: 1px solid var(--blue-border);
   border-radius: var(--radius-sm);
   padding: 11px 14px;
   color: var(--text-primary);
@@ -1478,7 +1514,7 @@ body {
 
 .calc-inquire-btn {
   background: var(--gold-gradient);
-  color: #0b172a;
+  color: #061124;
   border: none;
   padding: 9px 16px;
   border-radius: var(--radius-sm);
@@ -1489,13 +1525,13 @@ body {
 }
 
 [data-theme="light"] .calc-inquire-btn {
-  background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
   color: #ffffff;
 }
 
 .calc-inquire-btn:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 15px rgba(229, 184, 90, 0.4);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
 }
 
 /* ==========================================================================
@@ -1595,7 +1631,7 @@ body {
 
 .social-link-item {
   background: var(--bg-elevated);
-  border: 1px solid var(--glass-border);
+  border: 1px solid var(--blue-border);
   border-radius: var(--radius-md);
   padding: 12px 6px;
   display: flex;
@@ -1643,7 +1679,7 @@ body {
    ========================================================================== */
 .footer-executive-card {
   background: var(--bg-card);
-  border: 1px solid var(--glass-border);
+  border: 1.5px solid var(--glass-border);
   border-radius: var(--radius-lg);
   padding: 24px 20px;
   display: flex;
@@ -1667,7 +1703,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--gold-primary);
-  box-shadow: 0 0 14px rgba(229, 184, 90, 0.35);
+  box-shadow: 0 0 14px rgba(212, 175, 55, 0.4);
 }
 
 .footer-brand-title {
@@ -1696,7 +1732,7 @@ body {
 
 .footer-badge-pill {
   background: var(--bg-elevated);
-  border: 1px solid var(--glass-border);
+  border: 1px solid var(--blue-border);
   border-radius: var(--radius-full);
   padding: 6px 12px;
   font-size: 0.72rem;
@@ -1725,7 +1761,7 @@ body {
 }
 
 /* ==========================================================================
-   BOTTOM FLOATING ACTION DOCK (POLISHED & RESPONSIVE)
+   BOTTOM FLOATING ACTION DOCK
    ========================================================================== */
 .floating-bottom-bar {
   position: fixed;
@@ -1743,7 +1779,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4), var(--box-shadow-glow);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45), var(--box-shadow-glow);
   z-index: 999;
 }
 
@@ -1783,17 +1819,17 @@ body {
 /* Center Highlighted Save Card Button */
 .float-btn-primary {
   background: var(--gold-gradient) !important;
-  color: #0b172a !important;
+  color: #061124 !important;
   padding: 7px 12px !important;
   border-radius: var(--radius-full);
-  font-weight: 800;
-  box-shadow: 0 4px 15px rgba(229, 184, 90, 0.4);
+  font-weight: 900;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.45);
   transform: translateY(-4px);
   flex: 1.2;
 }
 
 [data-theme="light"] .float-btn-primary {
-  background: linear-gradient(135deg, #d97706 0%, #b45309 100%) !important;
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%) !important;
   color: #ffffff !important;
 }
 
@@ -1807,7 +1843,7 @@ body {
 }
 
 /* ==========================================================================
-   MODALS (APPOINTMENT, QR CODE, SHARE)
+   MODALS
    ========================================================================== */
 .modal-overlay {
   position: fixed;
@@ -1841,7 +1877,7 @@ body {
   max-width: 440px;
   max-height: 90vh;
   overflow-y: auto;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65);
   transform: scale(0.92) translateY(20px);
   transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
   position: relative;
@@ -1910,7 +1946,7 @@ body {
 
 .form-input, .form-select, .form-textarea {
   background: var(--bg-elevated);
-  border: 1px solid var(--glass-border-light);
+  border: 1px solid var(--blue-border);
   border-radius: var(--radius-sm);
   padding: 11px 14px;
   color: var(--text-primary);
@@ -1923,7 +1959,7 @@ body {
 
 .form-input:focus, .form-select:focus, .form-textarea:focus {
   border-color: var(--gold-primary);
-  box-shadow: 0 0 15px rgba(229, 184, 90, 0.25);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
 }
 
 .form-textarea {
@@ -1933,13 +1969,13 @@ body {
 
 .submit-btn {
   background: var(--gold-gradient);
-  color: #0b172a;
+  color: #061124;
   border: none;
   border-radius: var(--radius-sm);
   padding: 13px;
   font-family: var(--font-heading);
   font-size: 1rem;
-  font-weight: 800;
+  font-weight: 900;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -1950,12 +1986,12 @@ body {
 }
 
 [data-theme="light"] .submit-btn {
-  background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
   color: #ffffff;
 }
 
 .submit-btn:hover {
-  box-shadow: 0 6px 20px rgba(229, 184, 90, 0.4);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
   transform: translateY(-2px);
 }
 
@@ -1973,7 +2009,7 @@ body {
   background: #ffffff;
   padding: 12px;
   border-radius: var(--radius-md);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
   width: 190px;
   height: 190px;
   display: flex;
@@ -1998,7 +2034,7 @@ body {
   top: 24px;
   left: 50%;
   transform: translateX(-50%) translateY(-100px);
-  background: #0f172a;
+  background: #0d1e38;
   color: #ffffff;
   border: 1px solid var(--gold-border);
   padding: 12px 24px;
@@ -2023,7 +2059,7 @@ body {
 }
 
 /* ==========================================================================
-   RESPONSIVENESS & UTILITIES
+   RESPONSIVENESS
    ========================================================================== */
 @media (max-width: 380px) {
   .app-wrapper {
@@ -2052,15 +2088,15 @@ body {
 
 @media (min-width: 640px) {
   body {
-    background-color: #02060d;
+    background-color: #030811;
     padding: 20px 0;
   }
   [data-theme="light"] body {
-    background-color: #e2e8f0;
+    background-color: #e2eaf3;
   }
   .app-wrapper {
     border-radius: 36px;
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(229, 184, 90, 0.2);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 0 1.5px rgba(212, 175, 55, 0.25);
     background: var(--bg-primary);
   }
 }
