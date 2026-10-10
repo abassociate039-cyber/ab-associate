@@ -8,56 +8,56 @@
 
 :root {
   /* ========================================================================
-     DARK THEME (Default Executive Midnight Cobalt & 3D Gold - Exact Logo Wall)
+     DARK THEME (Signature Dark Charcoal #191C23, Navy Blue #1E4168 & Metallic Gold #D9A63A - #E8BD63)
      ======================================================================== */
-  --bg-primary: #060e1b;
-  --bg-secondary: #0a172c;
-  --bg-card: rgba(11, 24, 46, 0.88);
-  --bg-card-hover: rgba(16, 34, 64, 0.95);
-  --bg-card-solid: #0d1e38;
-  --bg-elevated: #11274a;
-  --bg-input: rgba(8, 18, 36, 0.8);
-  --bg-overlay: rgba(4, 9, 18, 0.88);
+  --bg-primary: #191C23;
+  --bg-secondary: #13161C;
+  --bg-card: rgba(25, 28, 35, 0.95);
+  --bg-card-hover: rgba(33, 37, 46, 0.98);
+  --bg-card-solid: #191C23;
+  --bg-elevated: #222630;
+  --bg-input: #14171E;
+  --bg-overlay: rgba(15, 17, 22, 0.94);
 
-  /* Signature Royal Cobalt Sapphire Blue (From "A" and "& ASSOCIATE") */
-  --blue-primary: #1e40af;
-  --blue-vibrant: #2563eb;
-  --blue-light: #60a5fa;
-  --blue-dark: #172554;
-  --blue-gradient: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%);
-  --blue-gradient-soft: linear-gradient(135deg, rgba(37, 99, 235, 0.2) 0%, rgba(30, 64, 175, 0.08) 100%);
-  --blue-border: rgba(37, 99, 235, 0.4);
-  --blue-glow: 0 0 25px rgba(37, 99, 235, 0.35);
+  /* Dark Royal Navy / Metallic Blue (#1E4168) */
+  --blue-primary: #1E4168;
+  --blue-vibrant: #2A5A8E;
+  --blue-light: #3E78B5;
+  --blue-dark: #122840;
+  --blue-gradient: linear-gradient(135deg, #2A5A8E 0%, #1E4168 50%, #122840 100%);
+  --blue-gradient-soft: linear-gradient(135deg, rgba(30, 65, 104, 0.2) 0%, rgba(18, 40, 64, 0.08) 100%);
+  --blue-border: rgba(30, 65, 104, 0.45);
+  --blue-glow: 0 0 25px rgba(30, 65, 104, 0.35);
 
-  /* Signature 3D Brushed Metallic Gold (From "B" and Arch) */
-  --gold-primary: #d4af37;
-  --gold-light: #fde047;
-  --gold-dark: #a16207;
-  --gold-gradient: linear-gradient(135deg, #fffbeb 0%, #fde047 35%, #d4af37 70%, #a16207 100%);
-  --gold-gradient-soft: linear-gradient(135deg, rgba(253, 224, 71, 0.15) 0%, rgba(212, 175, 55, 0.08) 100%);
-  --gold-border: rgba(212, 175, 55, 0.4);
-  --gold-border-glow: rgba(212, 175, 55, 0.75);
-  --gold-shadow: 0 10px 30px -5px rgba(212, 175, 55, 0.3);
+  /* Metallic Gold / Champagne Gold (#D9A63A to #E8BD63) */
+  --gold-primary: #D9A63A;
+  --gold-light: #E8BD63;
+  --gold-dark: #A67618;
+  --gold-gradient: linear-gradient(135deg, #FBF0D2 0%, #E8BD63 35%, #D9A63A 70%, #A67618 100%);
+  --gold-gradient-soft: linear-gradient(135deg, rgba(232, 189, 99, 0.15) 0%, rgba(217, 166, 58, 0.06) 100%);
+  --gold-border: rgba(217, 166, 58, 0.45);
+  --gold-border-glow: rgba(232, 189, 99, 0.75);
+  --gold-shadow: 0 10px 30px -5px rgba(217, 166, 58, 0.35);
 
   /* Typography Colors */
-  --text-primary: #ffffff;
-  --text-secondary: #cbd5e1;
-  --text-muted: #94a3b8;
-  --text-gold: #fde047;
-  --text-blue: #93c5fd;
+  --text-primary: #FFFFFF;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
+  --text-gold: #E8BD63;
+  --text-blue: #3E78B5;
 
   /* Borders & Glass */
-  --glass-border: rgba(212, 175, 55, 0.2);
-  --glass-border-light: rgba(255, 255, 255, 0.14);
+  --glass-border: rgba(217, 166, 58, 0.25);
+  --glass-border-light: rgba(255, 255, 255, 0.12);
   --glass-blur: blur(20px);
-  --box-shadow-card: 0 16px 40px -8px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(212, 175, 55, 0.22);
-  --box-shadow-glow: 0 0 35px rgba(37, 99, 235, 0.25);
+  --box-shadow-card: 0 16px 40px -8px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(217, 166, 58, 0.22);
+  --box-shadow-glow: 0 0 35px rgba(30, 65, 104, 0.3);
 
   /* Functional Status */
-  --success: #10b981;
+  --success: #10B981;
   --success-bg: rgba(16, 185, 129, 0.15);
-  --badge-bg: rgba(212, 175, 55, 0.15);
-  --badge-text: #fde047;
+  --badge-bg: rgba(217, 166, 58, 0.15);
+  --badge-text: #E8BD63;
 
   /* Fonts */
   --font-main: 'Plus Jakarta Sans', 'Noto Sans Gujarati', 'Noto Sans Devanagari', -apple-system, sans-serif;
@@ -171,7 +171,7 @@ body {
 .ambient-orb-1 {
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, #2563eb 0%, #1e40af 60%, #060e1b 100%);
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.35) 0%, rgba(30, 58, 138, 0.2) 50%, transparent 80%);
   top: -80px;
   left: -80px;
 }
@@ -179,7 +179,7 @@ body {
 .ambient-orb-2 {
   width: 420px;
   height: 420px;
-  background: radial-gradient(circle, #d4af37 0%, #a16207 70%, transparent 100%);
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.3) 0%, rgba(133, 77, 14, 0.15) 60%, transparent 85%);
   bottom: 10%;
   right: -100px;
   opacity: 0.22;
@@ -189,7 +189,7 @@ body {
 .ambient-orb-3 {
   width: 320px;
   height: 320px;
-  background: radial-gradient(circle, #1d4ed8 0%, #0a172c 80%);
+  background: radial-gradient(circle, rgba(30, 58, 138, 0.3) 0%, transparent 75%);
   top: 45%;
   left: 30%;
   opacity: 0.2;
@@ -430,10 +430,10 @@ body {
   box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.6), 0 0 0 1.5px rgba(212, 175, 55, 0.45);
 }
 
-/* Front Face: High Contrast Matte Obsidian Navy Wall */
+/* Front Face: High Contrast Matte Dark Charcoal Wall */
 .card-front {
-  background: radial-gradient(ellipse at 50% 30%, #142034 0%, #09101b 60%, #04070c 100%);
-  border: 1.5px solid #d4af37;
+  background: radial-gradient(ellipse at 50% 30%, #202530 0%, #191C23 60%, #101217 100%);
+  border: 1.5px solid #D9A63A;
 }
 
 /* Realistic Gold Sheen Foil Reflection */
@@ -446,9 +446,9 @@ body {
   background: linear-gradient(
     115deg,
     transparent 20%,
-    rgba(212, 175, 55, 0.08) 40%,
-    rgba(255, 255, 255, 0.18) 45%,
-    rgba(212, 175, 55, 0.08) 50%,
+    rgba(217, 166, 58, 0.08) 40%,
+    rgba(255, 255, 255, 0.16) 45%,
+    rgba(217, 166, 58, 0.08) 50%,
     transparent 70%
   );
   transform: rotate(-25deg);
@@ -479,9 +479,9 @@ body {
 .emv-chip {
   width: 44px;
   height: 32px;
-  background: linear-gradient(135deg, #fffbeb 0%, #d4af37 50%, #854d0e 100%);
+  background: linear-gradient(135deg, #FBF0D2 0%, #D9A63A 50%, #854D0E 100%);
   border-radius: 6px;
-  border: 1px solid #fef08a;
+  border: 1px solid #E8BD63;
   position: relative;
   box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.6), 0 2px 5px rgba(0, 0, 0, 0.4);
   overflow: hidden;
@@ -508,7 +508,7 @@ body {
 }
 
 .nfc-wave-icon {
-  color: #fde047;
+  color: #E8BD63;
   font-size: 1.3rem;
   opacity: 0.95;
   animation: pulseNfc 2.5s infinite ease-in-out;
@@ -516,13 +516,13 @@ body {
 
 @keyframes pulseNfc {
   0%, 100% { transform: scale(1); opacity: 0.75; }
-  50% { transform: scale(1.1); opacity: 1; filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.8)); }
+  50% { transform: scale(1.1); opacity: 1; filter: drop-shadow(0 0 6px rgba(217, 166, 58, 0.8)); }
 }
 
 .card-badge-vip {
-  background: rgba(212, 175, 55, 0.2);
-  border: 1px solid rgba(212, 175, 55, 0.65);
-  color: #fde047;
+  background: rgba(217, 166, 58, 0.18);
+  border: 1px solid rgba(217, 166, 58, 0.65);
+  color: #E8BD63;
   font-family: var(--font-heading);
   font-size: 0.68rem;
   font-weight: 800;
@@ -541,13 +541,13 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 3px;
-  background: rgba(2, 6, 14, 0.65);
+  background: rgba(19, 22, 28, 0.75);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(212, 175, 55, 0.3);
+  border: 1px solid rgba(217, 166, 58, 0.35);
   border-radius: 12px;
   padding: 10px 14px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.08);
   width: 100%;
 }
 
@@ -571,26 +571,28 @@ body {
   letter-spacing: 0 !important;
 }
 
-/* Luminous Royal Sapphire Blue for "A" and "ASSOCIATE" */
+/* Dark Royal Navy / Metallic Blue (#1E4168) for "A" and "ASSOCIATE" */
 .brand-letter-a,
 .brand-word-associate {
-  background: linear-gradient(135deg, #ffffff 0%, #93c5fd 20%, #3b82f6 55%, #1d4ed8 85%, #172554 100%);
+  color: #1E4168;
+  background: linear-gradient(135deg, #3E78B5 0%, #2A5A8E 35%, #1E4168 70%, #122840 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 12px rgba(59, 130, 246, 0.7));
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.9));
 }
 
 .brand-letter-a {
   font-weight: 900;
 }
 
-/* Radiant 3D Polished Gold for "B" and "&" */
+/* Metallic Gold / Champagne Gold (#D9A63A to #E8BD63) for "B" and "&" */
 .brand-letter-b,
 .brand-amp {
-  background: linear-gradient(135deg, #ffffff 0%, #fef08a 25%, #facc15 50%, #eab308 75%, #ca8a04 100%);
+  color: #D9A63A;
+  background: linear-gradient(135deg, #FBF0D2 0%, #E8BD63 35%, #D9A63A 70%, #A67618 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 12px rgba(250, 204, 21, 0.7));
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 10px rgba(217, 166, 58, 0.5));
 }
 
 .brand-letter-b {
@@ -607,31 +609,31 @@ body {
   letter-spacing: 1.5px;
 }
 
-/* Radiant Gold Firm Pillars Line */
+/* Metallic Gold / Champagne Gold Firm Pillars Line */
 .card-pillars-line {
   font-family: var(--font-heading);
   font-size: 0.74rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #ffffff 0%, #fef08a 25%, #fde047 55%, #eab308 80%, #ca8a04 100%);
+  background: linear-gradient(135deg, #FBF0D2 0%, #E8BD63 35%, #D9A63A 70%, #A67618 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: #fde047; /* fallback */
+  color: #D9A63A;
   letter-spacing: 1.6px;
   text-transform: uppercase;
   margin-top: 3px;
   filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.95));
 }
 
-/* Warm Radiant Gold Tagline */
+/* Warm Champagne Gold Tagline */
 .card-brand-tagline {
   font-family: 'Playfair Display', 'Georgia', serif, var(--font-main);
   font-size: 0.88rem;
-  color: #fef08a !important;
+  color: #E8BD63 !important;
   font-style: italic;
   letter-spacing: 0.5px;
   margin-top: 2px;
   font-weight: 600;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95), 0 0 10px rgba(254, 240, 138, 0.45);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95), 0 0 8px rgba(232, 189, 99, 0.4);
 }
 
 .card-footer-row {
@@ -851,8 +853,8 @@ body {
 .save-contact-btn {
   width: 100%;
   background: var(--gold-gradient);
-  color: #061124;
-  border: 1px solid #fef08a;
+  color: #13161C;
+  border: 1px solid #E8BD63;
   border-radius: var(--radius-md);
   padding: 14px 20px;
   font-family: var(--font-heading);
@@ -864,7 +866,7 @@ body {
   justify-content: center;
   gap: 12px;
   cursor: pointer;
-  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.35);
+  box-shadow: 0 8px 25px rgba(217, 166, 58, 0.35);
   transition: var(--transition);
   position: relative;
   overflow: hidden;
@@ -872,14 +874,14 @@ body {
 
 [data-theme="light"] .save-contact-btn {
   color: #ffffff;
-  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%);
-  border: 1.5px solid #d4af37;
-  box-shadow: 0 8px 25px rgba(30, 64, 175, 0.35);
+  background: linear-gradient(135deg, #1E4168 0%, #2A5A8E 50%, #1E4168 100%);
+  border: 1.5px solid #D9A63A;
+  box-shadow: 0 8px 25px rgba(30, 65, 104, 0.35);
 }
 
 .save-contact-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 35px rgba(212, 175, 55, 0.5);
+  box-shadow: 0 12px 35px rgba(217, 166, 58, 0.5);
 }
 
 /* Secondary CTA Buttons Row */
@@ -2036,7 +2038,7 @@ body {
 
 .submit-btn {
   background: var(--gold-gradient);
-  color: #061124;
+  color: #13161C;
   border: none;
   border-radius: var(--radius-sm);
   padding: 13px;
@@ -2053,12 +2055,12 @@ body {
 }
 
 [data-theme="light"] .submit-btn {
-  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+  background: linear-gradient(135deg, #1E4168 0%, #2A5A8E 100%);
   color: #ffffff;
 }
 
 .submit-btn:hover {
-  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+  box-shadow: 0 6px 20px rgba(217, 166, 58, 0.4);
   transform: translateY(-2px);
 }
 
@@ -2101,7 +2103,7 @@ body {
   top: 24px;
   left: 50%;
   transform: translateX(-50%) translateY(-100px);
-  background: #0d1e38;
+  background: #191C23;
   color: #ffffff;
   border: 1px solid var(--gold-border);
   padding: 12px 24px;
@@ -2111,7 +2113,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
   z-index: 100000;
   transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
   pointer-events: none;
@@ -2155,7 +2157,7 @@ body {
 
 @media (min-width: 640px) {
   body {
-    background-color: #030811;
+    background-color: #13161C;
     padding: 20px 0;
   }
   [data-theme="light"] body {
