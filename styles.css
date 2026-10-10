@@ -609,6 +609,35 @@ body {
   letter-spacing: 1.5px;
 }
 
+/* ==========================================================================
+   LIGHT THEME: PURE ROYAL BLUE BRAND TYPOGRAPHY (NO GOLD LETTERS IN WHITE THEME)
+   ========================================================================== */
+[data-theme="light"] .nav-brand-text .brand-letter-a,
+[data-theme="light"] .nav-brand-text .brand-letter-b,
+[data-theme="light"] .nav-brand-text .brand-amp,
+[data-theme="light"] .nav-brand-text .brand-word-associate,
+[data-theme="light"] .footer-brand-title .brand-letter-a,
+[data-theme="light"] .footer-brand-title .brand-letter-b,
+[data-theme="light"] .footer-brand-title .brand-amp,
+[data-theme="light"] .footer-brand-title .brand-word-associate {
+  color: #1e40af !important;
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 55%, #2563eb 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: none !important;
+  text-shadow: none !important;
+}
+
+[data-theme="light"] .nav-brand-logo {
+  border-color: #1e40af;
+  box-shadow: 0 0 10px rgba(30, 64, 175, 0.25);
+}
+
+[data-theme="light"] .footer-logo {
+  border-color: #1e40af;
+  box-shadow: 0 0 12px rgba(30, 64, 175, 0.25);
+}
+
 /* Metallic Gold / Champagne Gold Firm Pillars Line */
 .card-pillars-line {
   font-family: var(--font-heading);
